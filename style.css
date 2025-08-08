@@ -185,7 +185,7 @@ a {
   border: none;
 }
 
-label {
+.menu__res {
   display: none;
 }
 
@@ -323,6 +323,101 @@ label {
   width: 100%;
 }
 
+/* CTA Section */
+.cta {
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cta__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.cta__box__parent {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cta__box__top {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+
+.cta__box__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.cta__box {
+  width: 200px;
+  height: 247px;
+  box-shadow: 0 4px 24px 0 rgba(48, 29, 30, 0.102);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 16px;
+}
+
+#love {
+  display: none;
+}
+.heal__img {
+  cursor: pointer;
+  fill: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#love:checked ~ .heal__img path {
+  fill: red;
+}
+
+#love:checked ~ .heal__img {
+  fill: red;
+}
+
+.gift__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.gift__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--title-color);
+}
+
+.gif__price__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
 @media (max-width: 1290px) {
   .header {
     padding-left: 30px;
@@ -404,7 +499,7 @@ label {
   #menu {
     display: none;
   }
-  label {
+  .menu__res {
     display: block;
   }
 
@@ -422,7 +517,7 @@ label {
     background-repeat: no-repeat;
   }
 
-  #menu:checked ~ label > .close-icon {
+  #menu:checked ~ .menu__res > .close-icon {
     display: block;
     position: absolute;
     top: 30px;
@@ -431,6 +526,7 @@ label {
 
   .surprise__parent {
     flex-wrap: wrap;
+    gap: 60px;
   }
 }
 
@@ -438,6 +534,20 @@ label {
   .header {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .cta__box__top {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta__box__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -452,7 +562,7 @@ label {
 }
 
 @media (max-width: 601px) {
-  #menu:checked ~ label > .close-icon {
+  #menu:checked ~ .menu__res > .close-icon {
     right: 80px;
   }
 }
@@ -487,7 +597,7 @@ label {
 }
 
 @media (max-width: 460px) {
-  #menu:checked ~ label > .close-icon {
+  #menu:checked ~ .menu__res > .close-icon {
     right: 30px;
   }
 
@@ -523,5 +633,20 @@ label {
 
   .hero__text {
     font-size: 12px;
+  }
+
+  .cta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta__box__top {
+    margin-top: 30px;
+  }
+
+  .celebrate__img_title {
+    width: 100%;
   }
 }

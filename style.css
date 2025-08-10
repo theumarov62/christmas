@@ -417,6 +417,56 @@ a {
   line-height: 100%;
   color: var(--text-color);
 }
+/* New Section */
+
+.new__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}
+.new__box {
+  background-image: url(./images/new-section/new__section_bg_img.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 230px;
+  height: 278px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px 0 #282525;
+}
+
+.new__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.new__img {
+  position: relative;
+  left: 37px;
+  top: 11px;
+}
+
+.new__price {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--title-color);
+  line-height: 100%;
+  margin-top: 20px;
+}
+
+.new__price__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--text-color);
+}
 
 @media (max-width: 1290px) {
   .header {
@@ -483,6 +533,32 @@ a {
 }
 
 @media (max-width: 871px) {
+  .surprise__parent {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 701px) {
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .cta__box__top {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta__box__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   .nav-list {
     display: none;
     position: absolute;
@@ -521,33 +597,7 @@ a {
     display: block;
     position: absolute;
     top: 30px;
-    right: 140px;
-  }
-
-  .surprise__parent {
-    flex-wrap: wrap;
-    gap: 60px;
-  }
-}
-
-@media (max-width: 701px) {
-  .header {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media (max-width: 680px) {
-  .cta__box__top {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .cta__box__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    right: 100px;
   }
 }
 
